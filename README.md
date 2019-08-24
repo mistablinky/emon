@@ -16,3 +16,7 @@ ESP8266 on a proto board with all sensors connected: ![ESP8266 on a proto board 
 **Known issues**
 - re-connect after wifi connection loss works not properly
 - sporadic nonsense values from the DS18B20 temperature sensor
+
+**Free Culture License**
+This work is licensed under a Creative Commons *Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)*.
+Adaptations and commercial use are allowed AS LONG AS OTHERS SHARE ALIKE. [License terms](https://creativecommons.org/licenses/by-sa/4.0/)
