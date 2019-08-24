@@ -1,4 +1,6 @@
 # emon
+This project realises the energy monitoring of an off-grid 500Wp solar system located in Austria. An ESP8266 board measures voltage and current of the connected solar panels and sends the data every 10 seconds to the EmonCMS cloud. Solar harvesting live data: https://emoncms.org/app/view?name=Solarernte&readkey=8b38e7dcc457e170a6cc96cb234fc605
+
 General information
 - EmonCMS-Project: https://emoncms.org/site/home
 - ESP8266-Board: Adafruit Feather HUZZAH (https://www.adafruit.com/product/2821)
