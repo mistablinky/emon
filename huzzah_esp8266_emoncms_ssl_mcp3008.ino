@@ -47,11 +47,10 @@ time_t now;
 Adafruit_MCP3008 adc;
 uint16_t adc_raw[8];
 
-// ADC calibration (MCP2008, 10bit)
+// ADC calibration (MCP3008, 10bit)
 #define V_REF                  3.3                          // MCP3008 reference voltage
 float V_BatteryCalibration  =  (V_REF/1024) * 10.0;         // Voltage divider 100K/10K (33V max, 1=32mV)
 float V_SolarCalibration    =  (V_REF/1024) * (100.0/4.7);  // Voltage divider 100K/4K7 (70V max, 1=68mV)
-//float I_SolarCalibration  =  (V_REF/1024) * (1/0.045);    // ACS711EX Current Sensor 1A=45mV (73A max, 1=71mA)
 float I_SolarCalibration    =  (V_REF/1024) * (1/0.045);    // ACS711EX Current Sensor 1A=45mV (73A max, 1=71mA)
 float I_SolarOffset         =  -36.7;                       // Because ACS711EX quiescent output voltage is V_REF/2
 
