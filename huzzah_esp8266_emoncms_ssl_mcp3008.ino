@@ -8,21 +8,20 @@
 #include <DallasTemperature.h>
 #include "EmonLib.h"
 
-// Network settings
-const char* ssid_1      = "doedelair";
-const char* password_1  = "DidDoAiSiPw_38";
-const char* ssid_2      = "SALOMOPORT";
-const char* password_2  = "Start12345";
-//const char* ssid_3      = "";
-//const char* password_3  = "";
+// Secrets
+const char* ssid_1      = "wifi_1_ssid";
+const char* password_1  = "wifi_1_pw";
+const char* ssid_2      = "wifi_2_ssid";
+const char* password_2  = "wifi_2_pw";
+const char* ssid_3      = "wifi_3_ssid";
+const char* password_3  = "wifi_3_pw";
+const char fingerprint[] PROGMEM = "emoncms_fingerprint";
+const char* node      = "emoncms_node_name";
+const char* apikey    = "emoncms_api_key";
 
 //const char* server    = "https://emoncms.org/input";
 const char* server    = "emoncms.org";
 const int httpsPort   = 443;
-//const char fingerprint[] PROGMEM = "e2 69 b3 36 60 23 c1 f1 4a 54 1a 7a d7 e8 be 4a 18 86 ce 9f";
-const char fingerprint[] PROGMEM = "1d 0e b1 a6 b4 f7 9c f3 14 46 f7 e2 b0 8c a9 cc 3f d0 df b0";
-const char* node      = "doedelenergy";
-const char* apikey    = "43835a2876be5f4321793b0d905e4221";
 
 ESP8266WiFiMulti wifiMulti;
 boolean connectioWasAlive = true;
